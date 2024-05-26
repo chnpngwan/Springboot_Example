@@ -8,9 +8,9 @@
         <version>2.5.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.itheima</groupId>
+    <groupId>com.example</groupId>
     <artifactId>springboot_07_druid</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>springboot_07_druid</name>
     <description>Demo project for Spring Boot</description>
     <properties>

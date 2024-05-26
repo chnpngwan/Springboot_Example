@@ -62,10 +62,10 @@ tempDir2: "${baseDir}\temp \t1 \t2 \t3"
 # 使用时候从spring中直接获取信息使用
 
 datasource:
-  driver: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost/springboot_db
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/db_task
   username: root
-  password: root666123
+  password: 123456
 server:
   port: 80
   servlet:

@@ -8,9 +8,9 @@
         <version>2.5.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.itheima</groupId>
+    <groupId>com.example</groupId>
     <artifactId>springboot_06_mybatis_plus</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>springboot_06_mybatis_plus</name>
     <description>Demo project for Spring Boot</description>
     <properties>
