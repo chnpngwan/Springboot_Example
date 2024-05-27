@@ -1,5 +1,6 @@
 package com.example.entity;
 
+
 import javax.persistence.*;
 
 @Entity
@@ -7,7 +8,7 @@ import javax.persistence.*;
 public class City {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int cityId;
     private String cityName;
     private String cityIntroduce;

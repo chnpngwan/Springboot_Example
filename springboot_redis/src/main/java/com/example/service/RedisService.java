@@ -7,14 +7,6 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Service;
 
-/**
- * @author dalaoyang
- * @Description
- * @project springboot_learn
- * @package com.dalaoyang.service
- * @email yangyang@dalaoyang.cn
- * @date 2018/4/18
- */
 @Service
 public class RedisService {
     @Resource

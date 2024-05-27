@@ -12,10 +12,8 @@ import javax.servlet.http.HttpSession;
 @RestController
 public class CityController {
 
-
     @Autowired
     private CityRepository cityRepository;
-
 
     //http://localhost:8888/saveCity?cityName=北京&cityIntroduce=中国首都
     @GetMapping(value = "saveCity")
@@ -42,11 +40,11 @@ public class CityController {
 
 
     //http://localhost:8888/getCityById?cityId=3
-    @GetMapping(value = "getCityById")
+    /*@GetMapping(value = "getCityById")
     public City getCityById(Integer cityId,HttpServletRequest request){
         City city = cityRepository.findOne(cityId);
         HttpSession session = request.getSession();
         session.setAttribute(cityId.toString(),city);
         return city;
-    }
+    }*/
 }

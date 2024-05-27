@@ -18,7 +18,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.dalaoyang.swagger"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.swagger"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -26,9 +26,7 @@ public class Swagger2Config {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("使用Swagger2构建RESTful APIs")
-                .description("关注博主博客：https://www.dalaoyang.cn/")
-                .termsOfServiceUrl("https://www.dalaoyang.cn/")
-                .contact("dalaoyang")
+                .contact("example")
                 .version("1.0")
                 .build();
     }

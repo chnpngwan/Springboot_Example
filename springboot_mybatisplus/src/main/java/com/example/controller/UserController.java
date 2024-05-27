@@ -1,7 +1,7 @@
 package com.example.controller;
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.dao.UserMapper;
 import com.example.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -77,9 +77,9 @@ public class UserController {
     public List<User> getUserListByPage(Integer pageNumber,Integer pageSize)
     {
         Page<User> page =new Page<>(pageNumber,pageSize);
-        EntityWrapper<User> entityWrapper = new EntityWrapper<>();
-        entityWrapper.eq("user_name", "xiaoli");
-        return userDao.selectPage(page,entityWrapper);
+        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("user_name", "xiaoli");
+        return (List<User>) userDao.selectPage(page,queryWrapper);
     }
 
 }
