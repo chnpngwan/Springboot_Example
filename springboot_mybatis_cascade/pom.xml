@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>springboot_mybatis_cascade</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>springboot2_mybatis_cascade</name>
+    <name>springboot_mybatis_cascade</name>
     <description>springboot2_mybatis_cascade</description>
 
     <properties>
